@@ -1,0 +1,77 @@
+name: vallavanapp
+description: "Vallavan Fitness Flutter App"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  get: ^4.7.3
+  google_fonts: ^6.3.2
+  flutter_screenutil: ^5.9.3
+  loading_animation_widget: ^1.3.0
+  flutter_spinkit: ^5.2.1
+  flutter_secure_storage: ^9.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+  # App Icon
+  flutter_launcher_icons: ^0.14.4
+
+  # Splash Screen
+  flutter_native_splash: ^2.4.1
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/logo.png
+    - assets/images/splash_screen_preview.png
+
+# =========================
+# APP ICON CONFIG
+# =========================
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+
+  image_path: "assets/images/logo.png"
+
+  # Modern Android Adaptive Icon
+  adaptive_icon_background: "#020617"
+  adaptive_icon_foreground: "assets/images/logo.png"
+
+# =========================
+# SPLASH SCREEN CONFIG
+# =========================
+
+flutter_native_splash:
+
+  # Background Color
+  color: "#020617"
+
+  # Splash Logo
+  image: assets/images/splash_screen_preview.png
+
+  android: true
+  ios: true
+
+  # Fullscreen Splash
+  fullscreen: true
+
+  android_12:
+    image: assets/images/splash_screen_preview.png
+    color: "#020617"
